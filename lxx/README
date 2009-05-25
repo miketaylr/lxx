@@ -1,4 +1,13 @@
-Lxx, a micro html/css framework for displaying linguistic examples on the web. 
+Lxx, a micro html/css framework for displaying linguistic examples on the web.
+
+For example, in French 
+(http://sswl.railsplayground.net/terra_lingua/help)
+
+(1) Paul me  voit
+    Paul 1SG see.PRS.3SG
+    'Paul sees me.'
+
+
 
 Copyright (c) 2009 Mike Taylor
 
