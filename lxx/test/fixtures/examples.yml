@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  example: MyString
+  gloss: MyString
+  translation: MyString
+
+two:
+  example: MyString
+  gloss: MyString
+  translation: MyString
