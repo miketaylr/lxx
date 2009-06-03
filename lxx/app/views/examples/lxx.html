@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lxx test</title>
+	<style type="text/css" media="screen">
+		.lxx {margin-left:60px;}
+		.lxx .group {float: left;}
+		.group {margin-right: 5px;}
+		.group span {display: block;}
+		.translation {clear:left;display:block;}
+	</style>
+</head>
+<body>
+	<h1>lxx markup and style</h1>
+	<h2>Example (formatted w/ &lt;pre&gt; tag):</h2>
+	<pre>
+	Jo&atilde;o n&atilde;o gosta         dos     outros
+	Jo&atilde;o NEG like-3SG.PRES of-M.PL others-M.PL
+	Jo&atilde;o doesn't like others (people)</pre>
+	<h2>Test case:</h2>
+</body>
+<!-- ginormous lxx example, first take -->
+
+	<div class="lxx">
+		<div class="group">
+			<span class="example">Jo&atilde;o</span>
+			<span class="gloss">Jo&atilde;o</span>
+		</div>
+		<div class="group">
+			<span class="example">n&atilde;o</span>
+			<span class="gloss">NEG</span>
+		</div>
+		<div class="group">
+			<span class="example">gosta</span>
+			<span class="gloss">like-3SG.PRES</span>
+		</div>
+		<div class="group">
+			<span class="example">dos</span>
+			<span class="gloss">of-M.PL</span>
+		</div>
+		<div class="group">
+			<span class="example">outros</span>
+			<span class="gloss">others-M.PL</span>
+		</div>
+		<span class="translation">Jo&atilde;o doesn't like others (people)</span>
+	</div>
+</html>
