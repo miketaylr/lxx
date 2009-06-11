@@ -1,4 +1,8 @@
 class ExamplesController < ApplicationController
+  
+  def lxx
+  end
+  
   # GET /examples
   # GET /examples.xml
   def index
