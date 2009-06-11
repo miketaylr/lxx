@@ -1,0 +1,5 @@
+.lxx {margin-left:60px;}
+.lxx .group {float: left;}
+.group {margin-right: 5px;}
+.group span {display: block;}
+.translation {clear:left;display:block;}
