@@ -23,3 +23,176 @@ Migrating to CreateExamples (20090525023850)
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("examples")[0m
+
+
+Processing ExamplesController#show (for 127.0.0.1 at 2009-06-10 22:16:53) [GET]
+  Parameters: {"id"=>"lxx"}
+  [4;36;1mExample Load (0.1ms)[0m   [0;1mSELECT * FROM "examples" WHERE ("examples"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Example with ID=lxx):
+  app/controllers/examples_controller.rb:16:in `show'
+
+Rendered rescues/_trace (34.4ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ExamplesController#index (for 127.0.0.1 at 2009-06-10 22:16:57) [GET]
+  [4;35;1mExample Load (0.3ms)[0m   [0mSELECT * FROM "examples" [0m
+Rendering template within layouts/examples
+Rendering examples/index
+Completed in 92ms (View: 49, DB: 0) | 200 OK [http://localhost/examples/]
+
+
+Processing ExamplesController#show (for 127.0.0.1 at 2009-06-10 22:19:04) [GET]
+  Parameters: {"id"=>"lxx"}
+  [4;36;1mExample Load (0.1ms)[0m   [0;1mSELECT * FROM "examples" WHERE ("examples"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Example with ID=lxx):
+  app/controllers/examples_controller.rb:20:in `show'
+
+Rendered rescues/_trace (33.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ExamplesController#index (for 127.0.0.1 at 2009-06-10 22:19:06) [GET]
+  [4;35;1mExample Load (0.4ms)[0m   [0mSELECT * FROM "examples" [0m
+Rendering template within layouts/examples
+Rendering examples/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/lxx]
+
+
+Processing ExamplesController#lxx (for 127.0.0.1 at 2009-06-10 22:19:27) [GET]
+Rendering template within layouts/examples
+Rendering examples/lxx
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/lxx]
+
+
+Processing ExamplesController#lxx (for 127.0.0.1 at 2009-06-10 22:19:57) [GET]
+Rendering template within layouts/examples
+Rendering examples/lxx
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/lxx]
+
+
+Processing ExamplesController#show (for 127.0.0.1 at 2009-06-10 22:20:04) [GET]
+  Parameters: {"id"=>"lxx"}
+  [4;36;1mExample Load (0.2ms)[0m   [0;1mSELECT * FROM "examples" WHERE ("examples"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Example with ID=lxx):
+  app/controllers/examples_controller.rb:20:in `show'
+
+Rendered rescues/_trace (32.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ExamplesController#lxx (for 127.0.0.1 at 2009-06-10 22:20:08) [GET]
+Rendering template within layouts/examples
+Rendering examples/lxx
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/lxx]
+
+
+Processing ExamplesController#index (for 127.0.0.1 at 2009-06-10 22:40:07) [GET]
+  [4;35;1mExample Load (0.3ms)[0m   [0mSELECT * FROM "examples" [0m
+Rendering template within layouts/examples
+Rendering examples/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/examples]
+
+
+Processing ExamplesController#new (for 127.0.0.1 at 2009-06-10 22:40:14) [GET]
+Rendering template within layouts/examples
+Rendering examples/new
+Completed in 27ms (View: 23, DB: 0) | 200 OK [http://localhost/examples/new]
+
+
+Processing ExamplesController#lxx (for 127.0.0.1 at 2009-06-10 22:41:31) [POST]
+  Parameters: {"commit"=>"Create", "example"=>{"example"=>"Yo no soy marinero.", "translation"=>"I'm not a sailor", "gloss"=>"I NEG am-PRES sailor-S.M"}, "authenticity_token"=>"KxzRkR3lPVKEo6StLk5K4kw1oqiOUnZ7d5gRotuiul0="}
+Rendering template within layouts/examples
+Rendering examples/lxx
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/lxx]
+
+
+Processing ExamplesController#lxx (for 127.0.0.1 at 2009-06-10 22:43:07) [POST]
+  Parameters: {"commit"=>"Create", "example"=>{"example"=>"Yo no soy marinero.", "translation"=>"I'm not a sailor", "gloss"=>"I NEG am-PRES sailor-S.M"}, "authenticity_token"=>"KxzRkR3lPVKEo6StLk5K4kw1oqiOUnZ7d5gRotuiul0="}
+Rendering template within layouts/examples
+Rendering examples/lxx
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/lxx]
+
+
+Processing ExamplesController#index (for 127.0.0.1 at 2009-06-10 22:43:12) [GET]
+  [4;36;1mExample Load (0.3ms)[0m   [0;1mSELECT * FROM "examples" [0m
+Rendering template within layouts/examples
+Rendering examples/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/examples/]
+  [4;36;1mExample Create (8.1ms)[0m   [0;1mINSERT INTO "examples" ("updated_at", "example", "translation", "gloss", "created_at") VALUES('2009-06-11 02:45:25', 'I am a cowboy.', 'I am a cowboy', 'I am-1.PRES DET cowboy-SING', '2009-06-11 02:45:25')[0m
+
+
+Processing ExamplesController#index (for 127.0.0.1 at 2009-06-10 22:45:30) [GET]
+  [4;35;1mExample Load (0.5ms)[0m   [0mSELECT * FROM "examples" [0m
+Rendering template within layouts/examples
+Rendering examples/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/examples/]
+
+
+Processing ExamplesController#show (for 127.0.0.1 at 2009-06-10 22:45:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mExample Load (0.3ms)[0m   [0;1mSELECT * FROM "examples" WHERE ("examples"."id" = 1) [0m
+Rendering template within layouts/examples
+Rendering examples/show
+
+ActionView::TemplateError (undefined local variable or method `example' for #<ActionView::Base:0x11c5650>) on line #7 of app/views/examples/show.html.erb:
+4: 
+5: <div class="lxx">
+6: 	<div class="group">
+7: 		<span class="example"><%=h example[0] %></span>
+8: 		<span class="gloss"><%= h gloss[0] %></span>
+9: 	</div>
+10: 	<div class="group">
+
+    app/views/examples/show.html.erb:7
+    app/controllers/examples_controller.rb:22:in `show'
+
+Rendered rescues/_trace (42.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ExamplesController#show (for 127.0.0.1 at 2009-06-10 22:46:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mExample Load (0.2ms)[0m   [0mSELECT * FROM "examples" WHERE ("examples"."id" = 1) [0m
+Rendering template within layouts/examples
+Rendering examples/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/examples/1]
+
+
+Processing ExamplesController#show (for 127.0.0.1 at 2009-06-10 22:48:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mExample Load (0.2ms)[0m   [0;1mSELECT * FROM "examples" WHERE ("examples"."id" = 1) [0m
+Rendering template within layouts/examples
+Rendering examples/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/examples/1]
+
+
+Processing ExamplesController#show (for 127.0.0.1 at 2009-06-10 22:49:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mExample Load (0.3ms)[0m   [0mSELECT * FROM "examples" WHERE ("examples"."id" = 1) [0m
+Rendering template within layouts/examples
+Rendering examples/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/examples/1]
+
+
+Processing ExamplesController#show (for 127.0.0.1 at 2009-06-10 22:49:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mExample Load (0.2ms)[0m   [0;1mSELECT * FROM "examples" WHERE ("examples"."id" = 1) [0m
+Rendering template within layouts/examples
+Rendering examples/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/examples/1]
+
+
+Processing ExamplesController#show (for 127.0.0.1 at 2009-06-10 22:49:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mExample Load (0.2ms)[0m   [0mSELECT * FROM "examples" WHERE ("examples"."id" = 1) [0m
+Rendering template within layouts/examples
+Rendering examples/show
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/examples/1]
